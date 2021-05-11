@@ -1,0 +1,8 @@
+pandas==1.0.3
+tqdm==4.48.2
+torchvision==0.9.0
+numpy==1.17.3
+pytorch_lightning==0.8.5
+pytorch3d==0.4.0
+torch==1.8.0
+Pillow==8.2.0
