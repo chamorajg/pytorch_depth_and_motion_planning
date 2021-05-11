@@ -137,7 +137,6 @@ class DepthMotionLightningModel(LightningModule):
             tqdm_dict[metric_name] = metric_total / len(outputs)
 
         result = {'progress_bar': tqdm_dict, 'log': tqdm_dict, 'val_loss': tqdm_dict["val_loss"]}
-        self.logger.experiment.close()
         return result
 
     def configure_optimizers(self):
