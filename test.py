@@ -98,8 +98,8 @@ def odometry():
         motion_features = [     
                 torch.cat((endpoints['rgb'][0], 
                         endpoints['predicted_depth'][0]), dim=1),
-                torch.cat((endpoints['rgb'][0], 
-                        endpoints['predicted_depth'][0]), dim=1)]
+                torch.cat((endpoints['rgb'][1], 
+                        endpoints['predicted_depth'][1]), dim=1)]
         motion_features_stack = torch.cat(motion_features, dim=0)
         flipped_motion_features_stack = torch.cat(motion_features[::-1], dim=0)
         pairs = torch.cat([motion_features_stack, 
